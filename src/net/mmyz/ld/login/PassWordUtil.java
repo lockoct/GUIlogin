@@ -21,7 +21,6 @@ public class PassWordUtil {
 	 */
 	public static String pwEncrypt(String pw) {
 		String hashed = BCrypt.hashpw(pw,BCrypt.gensalt());
-		System.out.println(hashed);
 		return hashed;
 	}
 }
